@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ICE Challenges | Cory Crandall</title>
+  <meta name="description" content="ICE challenge assignments from WDD 130 - Web Fundamentals by Cory Crandall.">
+  <link rel="icon" href="portal_page/images/csc-design-logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/Styles.css">
+</head>
+
+
+<body id="top">
+
+  <a class="skip-link" href="#main">Skip to ICE challenges</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a class="brand" href="index.html">
+        <img class="brand-logo"
+             src="portal_page/images/csc-design-logo-100w.png"
+             srcset="portal_page/images/csc-design-logo-100w.png 100w,
+                     portal_page/images/csc-design-logo-400w.png 400w"
+             sizes="64px"
+             width="70" height="80"
+             alt="CSC Design logo">
+        <span class="brand-text">
+          <h1 class="site-title">Cory Crandall Project page</h1>
+          <span class="site-sub">WDD 130 - Web Fundamentals</span>
+        </span>
+      </a>
+
+      <nav aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ice.html" aria-current="page">ICE</a></li>
+          <li><a href="index.html#wwr">WWR</a></li>
+          <li><a href="index.html#about">About me</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main" class="container page">
+
+    <section class="page-intro" aria-labelledby="ice-heading">
+      <h2 id="ice-heading" class="showcase-title">ICE challenges</h2>
+      <p class="showcase-intro">
+        Each challenge below has a short description, what I learned, and a link
+        to the finished page. Links open in a new tab.
+      </p>
+    </section>
+
+    <section class="challenges" aria-label="ICE challenge assignments">
+
+      <article class="challenge">
+        <img class="challenge-img img-left" src="portal_page/images/thumbs/apostle-spotlight.webp"
+             width="600" height="400" loading="lazy"
+             alt="Christ with outstretched arms, from the Apostle Spotlight page">
+        <div class="challenge-body">
+          <h3>Apostle Spotlight</h3>
+          <p>
+            A spotlight panel of the First Presidency and the Quorum of the Twelve
+            Apostles, with round portraits laid out over a full-panel background image.
+          </p>
+          <h4>What I learned</h4>
+          <p>
+            I practiced round images with
+            <code>border-radius</code> and <code>object-fit</code>, a hover effect
+            that grows each portrait with <code>transform</code> and
+            <code>transition</code>, and a media query that lets the rows wrap on
+            small screens.
+          </p>
+          <a class="button" href="ice/apostle_spotlight/apostles.html" target="_blank" rel="noopener">
+            Open Apostle Spotlight<span class="sr-only"> (opens in a new tab)</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="challenge">
+        <img class="challenge-img" src="portal_page/images/thumbs/prophet-card.webp"
+             width="600" height="400" loading="lazy"
+             alt="Portrait of Dallin H. Oaks">
+        <div class="challenge-body">
+          <h3>Prophet Card</h3>
+          <p>
+            A profile card for President Dallin H. Oaks with his portrait, key
+            dates, a link to the Church website, and a quote.
+          </p>
+          <h4>What I learned</h4>
+          <p>
+            I practiced semantic HTML (<code>main</code>, <code>h1</code>,
+            <code>ul</code>, <code>img</code>) and styled a card with borders,
+            rounded corners, and a color scheme. I also added a Google Font for
+            the quote and opened an outside link in a new tab with
+            <code>target</code> and <code>rel</code>.
+          </p>
+          <a class="button" href="ice/prophet_cards/oaks.html" target="_blank" rel="noopener">
+            Open Prophet Card<span class="sr-only"> (opens in a new tab)</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="challenge">
+        <img class="challenge-img" src="portal_page/images/thumbs/favorite-devotionals.webp"
+             width="600" height="400" loading="lazy"
+             alt="The BYU-Idaho Center">
+        <div class="challenge-body">
+          <h3>Favorite Devotionals</h3>
+          <p>
+            A table of my favorite devotionals with speaker, title, location,
+            year, and a link to each one, plus a form for adding more.
+          </p>
+          <h4>What I learned</h4>
+          <p>
+            I built a table with <code>thead</code>, <code>tbody</code>, and
+            <code>th</code> cells, then styled it with collapsed borders, striped
+            rows, and a hover highlight. I also built a form with labels tied to
+            inputs through <code>for</code> and <code>id</code>, several input
+            types (text, number, url), and a two-column layout using CSS Grid.
+          </p>
+          <a class="button" href="ice/favorite_devo/favdevo.html" target="_blank" rel="noopener">
+            Open Favorite Devotionals<span class="sr-only"> (opens in a new tab)</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="challenge">
+        <img class="challenge-img" src="portal_page/images/thumbs/halloween.webp"
+             width="600" height="400" loading="lazy"
+             alt="Halloween illustration from the Happy Halloween page">
+        <div class="challenge-body">
+          <h3>Happy Halloween</h3>
+          <p>
+            A Halloween page where the HTML was already written and I could
+            only change the CSS.
+          </p>
+          <h4>What I learned</h4>
+          <p>
+            I saw how much an external stylesheet can change without touching the
+            markup. I used element and id selectors, a sticky header, a Flexbox
+            nav, a gradient background, an imported Google Font, alternating
+            sections with <code>:nth-of-type</code>, and hover animations.
+          </p>
+          <a class="button" href="ice/halloween/index.html" target="_blank" rel="noopener">
+            Open Happy Halloween<span class="sr-only"> (opens in a new tab)</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="challenge">
+        <img class="challenge-img" src="portal_page/images/thumbs/grid-flags.webp"
+             width="600" height="400" loading="lazy"
+             alt="Six flags: Chile, Denmark, Finland, Benin, Italy, and the Central African Republic">
+        <div class="challenge-body">
+          <h3>Grid Flags</h3>
+          <p>
+            Six country flags (Chile, Denmark, Finland, Benin, Italy, and the Central African Republic) drawn with CSS Grid alone.
+          </p>
+          <h4>What I learned</h4>
+          <p>
+            I learned to build layouts with <code>display: grid</code>, using <code>grid-template-columns</code> and <code>grid-template-rows</code> with <code>fr</code> units, and to place boxes with <code>grid-column</code> and <code>grid-row</code> so they span several tracks. I used <code>grid-gap</code> to draw the crosses on the Danish and Finnish flags and <code>clip-path</code> to cut out a star.
+          </p>
+          <a class="button" href="ice/grid_flags/flags.html" target="_blank" rel="noopener">
+            Open Grid Flags<span class="sr-only"> (opens in a new tab)</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="challenge">
+        <img class="challenge-img" src="portal_page/images/thumbs/positioning.webp"
+             width="600" height="400" loading="lazy"
+             alt="Colored boxes arranged with CSS Grid, from the positioning activities">
+        <div class="challenge-body">
+          <h3>Positioning Activity</h3>
+          <p>
+            Six activities where I matched the layout in an example image by editing only the stylesheet.
+          </p>
+          <h4>What I learned</h4>
+          <p>
+            I used CSS Grid for most of the layouts, overlapping boxes with <code>grid-column</code> and <code>grid-row</code> spans and layering them with <code>z-index</code>. The text-wrap activity taught me that <code>float</code>, not Grid, is the right tool for wrapping text around a box. I also added hover lift effects, a pop-in animation with <code>@keyframes</code>, and attribute selectors like <code>[class^="red"]</code> to style every box at once.
+          </p>
+          <a class="button" href="ice/positioning/positioning.html" target="_blank" rel="noopener">
+            Open Positioning Activity<span class="sr-only"> (opens in a new tab)</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="challenge">
+        <img class="challenge-img" src="portal_page/images/thumbs/gallery.webp"
+             width="600" height="400" loading="lazy"
+             alt="Christ Art Gallery page with the first three paintings">
+        <div class="challenge-body">
+          <h3>Christ Art Gallery</h3>
+          <p>
+            A dark photo gallery of six paintings of Christ. Each thumbnail links to a larger version of the image.
+          </p>
+          <h4>What I learned</h4>
+          <p>
+            I built a three-column gallery with CSS Grid and used small 200 by 300 thumbnails that link to the big images so the page loads faster. I dimmed the pictures with <code>filter: brightness()</code> and <code>saturate()</code> and brought them back to full color on hover with a <code>transition</code>. I also swapped the mouse pointer for a custom image and added a Google Font for the title.
+          </p>
+          <a class="button" href="ice/gallery/gallery.html" target="_blank" rel="noopener">
+            Open Christ Art Gallery<span class="sr-only"> (opens in a new tab)</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="challenge">
+        <img class="challenge-img" src="portal_page/images/thumbs/signup.webp"
+             width="600" height="400" loading="lazy"
+             alt="Daily Feed sign-up form with a banner image of Christ and a crowd">
+        <div class="challenge-body">
+          <h3>Daily Feed Sign Up</h3>
+          <p>
+            A sign-up form for a daily scripture feed, with a hero banner, a row of scripture covers, and a close button.
+          </p>
+          <h4>What I learned</h4>
+          <p>
+            I practiced text, password, and email inputs, radio buttons, and checkboxes, with <code>required</code> validation and labels tied to inputs. I laid the form out with CSS Grid, placed the close button with <code>position: absolute</code>, and built the banner with a cover background image and <code>text-shadow</code>. It was also my first taste of JavaScript: the close button hides the form, and submitting shows the data that would be sent to the server.
+          </p>
+          <a class="button" href="ice/signup/signup.html" target="_blank" rel="noopener">
+            Open Daily Feed Sign Up<span class="sr-only"> (opens in a new tab)</span>
+          </a>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+<footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-top">
+        <a class="footer-brand" href="index.html" aria-label="Back to top">
+          <img src="portal_page/images/csc-design-logo-100w.png"
+               width="70" height="80" alt="CSC Design logo">
+        </a>
+
+        <nav aria-label="Footer">
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ice.html">ICE</a></li>
+            <li><a href="index.html#wwr">WWR</a></li>
+            <li><a href="index.html#about">About me</a></li>
+          </ul>
+        </nav>
+
+<!-- ### Social Media Placeholders ### -->
+        <ul class="social">
+          <li>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                <path d="M13.5 21v-8h2.7l.4-3.2h-3.1V7.8c0-.9.3-1.5 1.6-1.5h1.7V3.4c-.3 0-1.3-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.2v2.3H7.5V13h2.8v8h3.2z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="X (Twitter)">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                <path d="M18.2 2.5h3.1l-6.8 7.7 8 11.3h-6.3l-4.9-6.4-5.6 6.4H2.6l7.3-8.3L1.9 2.5h6.4l4.4 5.9 5.5-5.9zm-1.1 17.1h1.7L7.2 4.3H5.4l11.7 15.3z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <p class="legal">
+        &copy; 2026 Cory Crandall. BYUI WDD 130 - Web Fundamentals.
+<!-- ### Place holder if decide to use ### 
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+-->
+      </p>
+
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlights</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 30px 20px;
+            background-color: #E8ECED;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        .panel {
+            position: relative;
+            max-width: 750px;
+            margin: 0 auto;
+            min-height: 550px;
+            box-sizing: border-box;
+            padding: 8px 20px 24px 170px; /* leave room for the statue on the left */
+            border: 8px solid #000;
+            border-radius: 28px;
+            overflow: hidden;
+            text-align: center;
+            background: url("./images/christus.webp") center / cover no-repeat;
+        }
+
+        h2 {
+            margin: 0;
+            font-weight: normal;
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .title-main { font-size: 30px; margin-bottom: 10px; }
+        .title-sub  { font-size: 20px; margin: 14px 0 12px; }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 18px;
+        }
+        .row + .row { margin-top: 10px; }
+
+    
+        .apostle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            background-color: #555; /* shows if image is missing */
+            object-fit: cover;
+            box-sizing: content-box;
+            transition: border-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .apostle:hover {
+            border-color: gold;
+            transform: scale(1.5);
+        }        
+        
+        .presidency .apostle { width: 100px; height: 100px; }
+        .presidency .apostle.center { width: 120px; height: 120px; }
+
+
+        @media (max-width: 600px) {
+            .panel { padding-left: 20px; }
+            .row   { flex-wrap: wrap; }
+        }
+    </style>
+</head>
+<body>
+    <main class="panel">
+        <h2 class="title-main">First Presidency</h2>
+
+        <section class="row presidency">
+            <img class="apostle" src="./images/eyring.webp" alt="Eyering">
+            <img class="apostle center" src="./images/oaks.webp" alt="Oaks">
+            <img class="apostle" src="./images/christofferson.webp" alt="Christofferson">
+        </section>
+
+        <h2 class="title-sub">Quorum of the Twelve Apostles</h2>
+
+        <section class="row">
+            <img class="apostle" src="./images/uchtdorf.webp" alt="Uchtdorf">
+            <img class="apostle" src="./images/bednar.webp" alt="Bednar">
+            <img class="apostle" src="./images/cook.webp" alt="Cook">
+            <img class="apostle" src="./images/anderson.webp" alt="Anderson">
+        </section>
+
+        <section class="row">
+            <img class="apostle" src="./images/rasband.webp" alt="Rasband">
+            <img class="apostle" src="./images/stevenson.webp" alt="Stevenson">
+            <img class="apostle" src="./images/renlund.webp" alt="Renlund">
+            <img class="apostle" src="./images/gong.webp" alt="Gong">
+        </section>
+
+        <section class="row">
+            <img class="apostle" src="./images/soares.webp" alt="Soares">
+            <img class="apostle" src="./images/kearon.webp" alt="Kearon">
+            <img class="apostle" src="./images/causse.webp" alt="Causse">
+            <img class="apostle" src="./images/gilbert.webp" alt="Gilbert">
+        </section>
+  </main>
+</body>
+</html>

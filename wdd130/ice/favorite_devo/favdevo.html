@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Favorite Devotionals</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-image">
+        <h1>My Favorite<br>Devotionals</h1>
+      </div>
+    </header>
+    <main>
+      <div class="content-box">
+        
+      <h2>My Favorite Devotionals</h2>
+
+      <table class="favorites-table">
+        <thead>
+          <tr>
+            <th>Speaker</th>
+            <th>Title</th>
+            <th>Location</th>
+            <th>Year</th>
+            <th class="link-col">Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <!-- https://www.byui.edu/speeches/devotionals/roger-nichols/embracing-change -->
+            <td>Roger Nichols</td>
+            <td>Embracing Change</td>
+            <td>BYU–Idaho Center, Rexburg, ID</td>
+            <td>2023</td>
+            <td class="link-col">
+              <a class="devotional-link"
+                href="https://www.byui.edu/speeches/devotionals/roger-nichols/embracing-change"
+                target="_blank" rel="noopener noreferrer"
+                aria-label="Open devotional: Embracing Change"
+                title="Open devotional">🔗</a>
+          </tr>
+          <tr>
+            <!--https://www.byui.edu/speeches/karl-karstad/striving-for-lasting-happiness-->
+            <td>Karl Karstad</td>
+            <td>Striving for Lasting Happiness</td>
+            <td>BYU–Idaho Center, Rexburg, ID</td>
+            <td>2023</td>
+            <td class="link-col">
+              <a class="devotional-link"
+                href="https://www.byui.edu/speeches/karl-karstad/striving-for-lasting-happiness"
+                target="_blank" rel="noopener noreferrer"
+                aria-label="Open devotional: Striving for Lasting Happiness"
+                title="Open devotional">🔗</a>
+            </td>            
+          </tr>
+          <tr>
+            <!--https://www.byui.edu/speeches/henry-j-eyring/rising-above-opposition-->
+            <td>President Henry J. Eyring</td>
+            <td>Rising Above Opposition</td>
+            <td>BYU–Idaho Center, Rexburg, ID</td>
+            <td>2019</td>
+            <td class="link-col">
+              <a class="devotional-link"
+                href="https://www.byui.edu/speeches/henry-j-eyring/rising-above-opposition"
+                target="_blank" rel="noopener noreferrer"
+                aria-label="Open devotional: Rising Above Opposition"
+                title="Open devotional">🔗</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Add More Devotionals</h2>
+
+      <form class="devotional-form" action="#" method="post">
+        <div class="form-group">
+          <label for="speaker">Speaker</label>
+          <input type="text" id="speaker" name="speaker" placeholder="e.g., First Last">
+        </div>
+
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" id="title" name="title" placeholder="Devotional title">
+        </div>
+
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input type="text" id="location" name="location" placeholder="City, State or venue">
+        </div>
+
+        <div class="form-group">
+          <label for="year">Year</label>
+          <input type="number" id="year" name="year" min="1900" max="2100" placeholder="2024">
+        </div>
+
+        <div class="form-group form-group-wide">
+          <label for="url">Devotional URL</label>
+          <input type="url" id="url" name="url" placeholder="https://www.byui.edu/speeches/...">
+        </div>
+
+        <button type="submit">Add Devotional</button>
+      </form>
+
+
+      </div>
+    </main>
+  </div>
+</body>
+</html>

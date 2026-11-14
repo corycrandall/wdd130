@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: gray;
+        }
+
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            letter-spacing: 0.05rem;
+            text-transform: uppercase;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-weight: 400;
+        }
+        
+        main {
+            display: grid;
+            grid-template-columns: .1fr .1fr 1fr .1fr;
+            margin-top: 20px;
+        }
+        hr {
+            width: 100%;
+            grid-column: 1 / 5;
+        }
+        h2 {
+            grid-column: 2/3;
+        }
+
+/* -=-=-=- CHILE -=-=-=- */
+        #blue {
+            background: blue;
+            grid-column: 1 / 2;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+        }
+
+        #white {
+            background: white;
+            grid-column: 2 / 4;
+        }
+
+        #red {
+            background: red;
+            grid-column: 1 / 4;
+        }
+
+        #chile {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: 200px;
+            width: 300px;
+        }
+
+        .star {
+            width: 70px;
+            aspect-ratio: 1;
+            background: white;
+            clip-path: polygon(50% 0, 79% 90%, 2% 35%, 98% 35%, 21% 90%);
+        }
+
+/* -=-=-=-=- DENMARK -=-=-=- */
+        #denmark {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 1fr;
+            width: 300px;
+            height: 200px;
+            grid-gap: 30px;
+            background-color: white;          
+        }
+
+        #dred1, #dred2, #dred3, #dred4 {
+            background: red;
+        }
+
+
+/* -=-=-=-=- FINLAND -=-=-=-=- */
+        #finland {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 1fr;
+            width: 300px;
+            height: 200px;
+            grid-gap: 45px;
+            background-color: blue;
+        }
+
+        #fwhite1, #fwhite2, #fwhite3, #fwhite4 {
+            background: white;
+        }
+
+
+/* -=-=-=-=-=- BENIN -=-=-=-=-=- */        
+        #benin {
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            grid-template-rows: 1fr 1fr;
+            width: 300px;
+            height: 200px;
+        }
+
+        #bgreen {
+            background: green;
+            grid-column: 1 / 2;
+            grid-row: 1 / 3;
+        }
+
+        #byellow {
+            background: yellow;
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+
+        #bred {
+            background: red;
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+
+/* -=-=-=-=-=-=- ITALY -=-=-=-=-=-=- */
+        #italy {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 300px;
+            height: 200px;
+        }
+
+        #igreen { background: green; }
+        #iwhite { background: white; }
+        #ired   { background: red; }
+
+/* -=-=-=-=-=-=- C.A.R. -=-=-=-=-=-=- */        
+        #car {
+            display: grid;
+            grid-template-columns: 7fr 3fr 7fr;
+            grid-template-rows: repeat(4, 1fr);
+            width: 300px;
+            height: 200px;
+        }
+
+        #cblue, #cwhite, #cgreen, #cyellow {
+            grid-column: 1 / 4;
+        }
+
+        #cblue   { grid-row: 1 / 2; background: blue;
+                   display: grid;
+                   grid-template-columns: 7fr 3fr 7fr;
+                   align-items: center;
+                   justify-items: center; }
+        #cwhite  { grid-row: 2 / 3; background: white; }
+        #cgreen  { grid-row: 3 / 4; background: green; }
+        #cyellow { grid-row: 4 / 5; background: yellow;}
+
+        #cred {
+            grid-column: 2 / 3;
+            grid-row: 1 / 5;
+            background: red
+        }
+
+        #car .star {
+            width: 45px;
+            background: gold;
+            grid-column: 1 / 2;
+            justify-self: start;
+            margin-left: 20px;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <h1>Using CSS Grid to make Country Flags</h1>
+    </header>
+    <main>
+        <h2>Chile</h2>
+        <div id="chile">
+            <div id="blue">
+                <div class="star"></div>
+            </div>
+            <div id="white"></div>
+            <div id="red"></div>
+        </div>
+        <hr>
+
+        <h2>Denmark</h2>
+        <div id="denmark">
+            <div id="dred1"></div>
+            <div id="dred2"></div>
+            <div id="dred3"></div>
+            <div id="dred4"></div>
+        </div>
+        <hr>
+
+        <h2>Finland</h2>
+        <div id="finland">
+            <div id="fwhite1"></div>
+            <div id="fwhite2"></div>
+            <div id="fwhite3"></div>
+            <div id="fwhite4"></div>
+        </div>
+        <hr>
+
+        <h2>Benin</h2>
+        <div id="benin">
+            <div id="bgreen"></div>
+            <div id="byellow"></div>
+            <div id="bred"></div>
+        </div>
+        <hr>
+
+        <h2>Italy</h2>
+        <div id="italy">
+            <div id="igreen"></div>
+            <div id="iwhite"></div>
+            <div id="ired"></div>
+        </div>
+        <hr>
+
+        <h2>Central African Republic</h2>
+        <div id="car">
+            <div id="cblue">
+                <div class="star"></div>
+            </div>
+            <div id="cwhite"></div>
+            <div id="cgreen"></div>
+            <div id="cyellow"></div>
+            <div id="cred"></div>
+        </div>
+        <hr>
+    </main>
+</body>
+
+</html>

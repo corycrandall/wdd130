@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap');
+
+body {
+    background-color: #001122;
+    background-image: radial-gradient(ellipse at top, #442255, #001122);
+    background-attachment: fixed;
+    color: #ffffee;
+    font-family: 'Crimson Pro', Georgia, serif;
+    font-size: 1rem;
+    line-height: 2;
+}
+
+#wrapper {
+    max-width: 100%;
+}
+
+/* -=-=-=- Navigation -=-=-=- */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #222233;
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid #ff8822;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+}
+
+nav li {
+    font-family: 'Pirata One', 'Georgia', serif;
+    font-size: 1.5rem;
+    color: #ffbb44;
+    cursor: pointer;
+    transition: text-shadow 0.25s, transform 0.25s;
+}
+
+nav li:hover { /* glow,float,grow */
+    text-shadow: 0 0 14px #ff8822; 
+    transform: translateY(-5px) scale(1.2);
+}
+
+/* -=-=-=- Main -=-=-=- */
+main {
+    padding: 2rem 1.25rem 3rem;
+}
+
+h1 {
+    font-family: 'Pirata One', 'Georgia', serif;
+    font-weight: 400;
+    font-size: clamp(3.2rem, 11vw, 6.5rem);
+    line-height: 1;
+    text-align: center;
+    margin: 0.5rem 0 1.75rem;
+    color: #ffbb44;
+    text-shadow: 0 0 0.3em #ee7711;
+}
+
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 34rem;
+    height: auto;
+    margin: 0 auto 3rem;
+    border: 2px solid #ff8822;
+    border-radius: 1rem;
+    box-shadow: 0 0 70px rgba(255, 138, 31, 0.35);
+}
+
+section {
+    max-width: 40rem;
+    margin: 0 auto 2.5rem;
+    padding-left: 1.5rem;
+    border-left: 3px solid #ff8822;
+}
+
+
+section:nth-of-type(even) { /* Flip Back and forth */
+    padding-left: 0;
+    padding-right: 1.5rem;
+    border-left: 0;
+    border-right: 3px solid #ff8822;
+    text-align: right;
+}
+
+h2 {
+    font-family: 'Pirata One', 'Georgia', serif;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 1.1;
+    margin: 0 0 0.4rem;
+    color: #cc88ee;
+}
+
+p { margin: 0; }
+
+/* -=-=-=- Footer -=-=-=-  */
+footer {
+    padding: 1rem 1rem 2rem; 
+    text-align: center;
+    font-style: italic;
+    font-size: 1rem;
+    color: #665555;
+    border-top: 1px solid #ff8822;
+}
+
+@media (max-width: 40rem) {
+    body { font-size: 1rem; }
+    section:nth-of-type(even) { text-align: left; }
+}

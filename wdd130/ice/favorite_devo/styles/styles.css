@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #d3d3d3, #001f3f);
+  background-repeat: no-repeat; /* Just in case */
+  background-attachment: fixed;
+}
+
+.container {
+  text-align: center;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.header-image {
+  background-image: url('../images/BYUI_Center.webp'); /*  https://www.byui.edu/newsroom/announcements/winter-2026-devotional-and-forum-schedule */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #22aaff;
+
+}
+
+.header-image h1 {
+  margin: 0;
+  line-height: 0.9;
+    font-size: 3.5em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background: #00000055;
+}
+
+.content-box {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+
+.content-box h2 {
+  color: #1f3a5f;
+  border-bottom: 2px solid #ddaa33;
+  padding-bottom: 0.4rem;
+  margin: 1.5rem 0 1rem;
+}
+
+/* ---------- Table ---------- */
+.favorites-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.favorites-table .link-col {
+  text-align: center;
+  width: 70px;
+}
+
+.favorites-table th,
+.favorites-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.favorites-table thead th {
+  background-color: #22aaff;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+.favorites-table tbody tr:nth-child(even) {
+  background-color: #f4f7fb;
+}
+
+.favorites-table tbody tr:hover {
+  background-color: #e6edf6;
+}
+
+/* ---------- Form ---------- */
+.devotional-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 1.5rem;
+  padding: 1.5rem;
+  background-color: #f4f7fb;
+  border: 1px solid #d5dde8;
+  border-radius: 8px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #22aaff;
+  margin-bottom: 0.3rem;
+}
+
+.form-group input {
+  padding: 0.6rem;
+  border: 1px solid #b8c4d4;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #ddaa33;
+  box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.25);
+}
+
+.devotional-link {
+  display: inline-block;
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.devotional-link:hover,
+.devotional-link:focus {
+  transform: scale(1.25);
+}
+
+.devotional-form button {
+  grid-column: 1 / -1;
+  justify-self: start;
+  padding: 0.7rem 1.6rem;
+  background-color: #22aaff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.devotional-form button:hover {
+  background-color: #ddaa33;
+  color: #1f3a5f;
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 600px) {
+  .devotional-form {
+    grid-template-columns: 1fr;
+  }
+
+  .favorites-table th,
+  .favorites-table td {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
